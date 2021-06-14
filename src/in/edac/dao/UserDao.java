@@ -10,6 +10,7 @@ public class UserDao {
 	public static final String DB_DRIVER = "com.mysql.cj.jdbc.Driver";
 	public static final String DB_DRIVER1 = "com.mysql.cj.jdbc.Driver";
 	public static final String DB_URL = "jdbc:mysql://localhost:3306/edac";
+	public static final String DB_URL1 = "jdbc:mysql://localhost:3306/edac";
 	public static final String DB_USER = "root";
 	public static final String DB_PASSWORD = "edac20";
 
