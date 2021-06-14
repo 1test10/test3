@@ -14,6 +14,8 @@ public class UserDao {
 	public static final String DB_USER = "root";
 	public static final String DB_PASSWORD = "edac20";
 
+	public static final String DB_PASSWORD1 = "edac20";
+
 	public void checkConnection() {
 		try (Connection con = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);) {
 			System.out.println("succes");
@@ -25,7 +27,7 @@ public class UserDao {
 
 	}
 
-	public boolean createUser(User user) throws Exception {
+	public boolean createUser1(User user) throws Exception {
 		Class.forName(DB_DRIVER);
 		try (Connection con = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);) {
 			String sql = "INSERT INTO USER (USERNAME, EMAIL, PASSWORD, MOBILE) VALUES (?, ?, ?, ?)";
